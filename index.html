@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head >
+    <meta charset="utf-8" />
+    <title>Task</title>
+    <style>
+        .page {
+            position: absolute;
+            width: 35%;
+            height: 70%;
+            background-repeat: round;
+        }
+
+        .mainarea {
+            position: absolute;
+            height: 40%;
+            width: 50%;
+            left: 5%;
+            top: 5%
+        }
+
+        .pics {
+            position: absolute;
+            left: 60%;
+            top: 5%
+        }
+
+        .timg {
+            border: 3px inset #168600;
+            margin: 1%;
+            background-image: url(all.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 35%;
+            width: 40%;
+            float: left;
+            top: 12%;
+        }
+
+        .img {
+            border: 3px inset #ffffff;
+            width: 100%;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            height: 90%;
+            width: 100%;
+        }
+
+        .captionbox {
+            position: absolute;
+            top: 93%;
+            width: 100%;
+        }
+
+        .caption {
+            color: #ffffff;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 0.6vw;
+            line-height: 0.6vw;
+        }
+
+        .menu {
+            width: 100%;
+            height: 10%;
+            padding-top: 1%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+            .menu.side {
+                background-color: #808080;
+            }
+
+            .menu.center {
+                background-image: linear-gradient(to bottom,transparent 50%,#2300b9 100%);
+            }
+
+        .layout {
+            text-align: center;
+            width: 95%;
+            height: 95%;
+            border: none;
+            border-collapse: separate;
+            border-spacing: 2px;
+        }
+
+        .options {
+            margin-left: 1%;
+            margin-right: 1%;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 0.6vw;
+            width: 33%;
+        }
+
+            .options.side {
+                background-color: #cccccc;
+                color: #2300b9;
+            }
+
+                .options.side:hover {
+                    color: #8f00b9;
+                }
+
+            .options.center {
+                background-image: linear-gradient(to bottom,transparent 10%,#160077 100%);
+                color: #ffffff;
+            }
+
+                .options.center:hover {
+                    background-image: linear-gradient(to bottom,transparent 10%,#168600 100%);
+                }
+
+        .backdrop {
+            background-color: #ffffff;
+            border: 2px solid #ffffff;
+            position: absolute;
+            height: 40%;
+            width: 50%;
+            left: 5%;
+            top: 55%;
+        }
+
+        .textblock {
+            position: absolute;
+            top: 13%;
+            width: 98%;
+            height: 85%;
+            overflow: auto;
+        }
+
+        .maintext {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 22px;
+            margin: 2%;
+        }
+
+            .maintext a {
+                font-size: large;
+            }
+    </style>
+</head>
+<body>
+    <div class="page" style="left:2%;top:2%;background-image:url(bgr_left.jpg);">
+        <div class="mainarea">
+            <div class="img" style="background-image:url(left_big.png)"></div>
+            <p class="caption captionbox">Dicoatl - wind Voidcritter, rare</p>
+        </div>
+
+        <div class="pics" style="height:70%; width:26%;">
+            <div style="position:absolute; left:0%; top:0%; width:45%; height:20%;">
+                <div class="img" style="background-image:url(voidcritter-14.png)"></div>
+                <p class="caption  captionbox">Dicoatl</p>
+            </div>
+            <div style="position:absolute;left:55%;top:0%;width:45%;height:20%;">
+                <div class="img" style="background-image:url(voidcritter-5.png)"></div>
+                <p class="caption captionbox">Suintor</p>
+            </div>
+            <div style="position:absolute;left:0%;top:27%;width:45%;height:20%;">
+                <div class="img" style="background-image:url(voidcritter-7.png)"></div>
+                <p class="caption captionbox">Nymphaea</p>
+            </div>
+            <div style="position:absolute;left:55%;top:27%;width:45%;height:20%;">
+                <div class="img" style="background-image:url(voidcritter-8.png)"></div>
+                <p class="caption captionbox">Simgaia</p>
+            </div>
+            <div style="position:absolute;left:0%;top:54%;width:45%;height:20%;">
+                <div class="img" style="background-image:url(Vulpes.png)"></div>
+                <p class="caption captionbox">Vulpes</p>
+            </div>
+            <div style="position:absolute;left:55%;top:54%;width:45%;height:20%;">
+                <div class="img" style="background-image:url(voidcritter-bubalus.png)"></div>
+                <p class="caption captionbox">Bubalus</p>
+            </div>
+            <div style="position:absolute;left:0%;top:81%;width:45%;height:20%;">
+                <div class="img" style="background-image:url(voidcritter-bubalus.png)"></div>
+                <p class="caption captionbox">Cyrpin</p>
+            </div>
+            <div style="position:absolute;left:55%;top:81%;width:45%;height:20%;">
+                <div class="img" style="background-image:url(all.jpg)"></div>
+                <p class="caption captionbox">All Voidcritters</p>
+            </div>
+        </div>
+
+        <div class="backdrop">
+            <div class="menu side">
+                <table class="layout">
+                    <tr>
+                        <td class="options side">About Voidcritter</td>
+                        <td class="options side">Marketplace</td>
+                        <td class="options side">Tools + Workshop</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="textblock">
+                <div class="timg"></div> 
+                <p class="maintext">
+                    The flying serpent Dicoatl is a skilled hunter of the skies. Its battle abilities include creating strong gales of wind with its wings, and a gem on its forehead which it can illuminate to signal other Dicoatl.
+                </p>
+                <p class="maintext">
+                    <a href="task.html">Visit the website</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="page" style="background-image:url(bgr_right.jpg);left:55%; top:2%;">
+        <div class="mainarea">
+            <div class="img" style="background-image:url(right_big.png)"></div>
+            <p class="caption captionbox">Bubalus - water Voidcritter, uncommon</p>
+        </div>
+
+        <div class="pics" style=" height:85%; width:35%;">
+            <div style="position:absolute;left:0%;top:0%;width:100%;height:20%;">
+                <div class="img" style="background-image:url(voidcritter-14.png)"></div>
+                <div class="captionbox">
+                    <table class="layout">
+                        <tr><td class="caption">Dicoatl, water</td></tr>
+                        <tr><td class="caption">Rare</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div style="position:absolute;left:0%;top:25%;width:100%;height:20%;">
+                <div class="img" style="background-image:url(voidcritter-5.png)"></div>
+                <div class="captionbox">
+                    <table class="layout">
+                        <tr><td class="caption">Suintor, Earth</td></tr>
+                        <tr><td class="caption">Rare</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div style="position:absolute;left:0%;top:50%;width:100%;height:20%;">
+                <div class="img" style="background-image:url(voidcritter-7.png)"></div>
+                <div class="captionbox">
+                    <table class="layout">
+                        <tr><td class="caption">Nymphaea, Earth</td></tr>
+                        <tr><td class="caption">Common</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div style="position:absolute;left:0%;top:75%;width:100%;height:20%;">
+                <div class="img" style="background-image:url(voidcritter-8.png)"></div>
+                <div class="captionbox">
+                    <table class="layout">
+                        <tr><td class="caption">Simgaia, Earth</td></tr>
+                        <tr><td class="caption">Uncommon</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="backdrop">
+            <div class="menu side">
+                <table class="layout">
+                    <tr>
+                        <td class="options side">About Voidcritter</td>
+                        <td class="options side">Marketplace</td>
+                        <td class="options side">Tools + Workshop</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="textblock">
+                <div class="timg"></div>
+                <p class="maintext">
+                    These gentle giants are often found floating in the middle of lakes, feasting on underwater or shoreline plants. If threatened, Bubalus will charge their offender with surprising speed.
+                </p>
+                <p class="maintext">
+                    <a href="task.html">Visit the website</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <div class="page" style="background-image:url(bgr_center.jpg); left:27%;top:27%;">
+        <div class="mainarea">
+            <div class="img" style="background-image:url(center_big.png)"></div>
+        </div>            
+
+        <div class="backdrop">
+            <div class="menu center">
+                <table class="layout">
+                    <tr>
+                        <td class="options center">About Voidcritter</td>
+                        <td class="options center">Marketplace</td>
+                        <td class="options center">Tools + Workshop</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="textblock">
+                <div class="timg"></div>
+                <p class="maintext">
+                    In the depths of the Mauven Forest on its home world, Vulpes’ used their ability to manipulate gravity to blend in with the violet leaf canopy when hunting their prey.
+                </p>
+                <p class="maintext">
+                    <a href="task.html">Visit the website</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
